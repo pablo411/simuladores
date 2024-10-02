@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b634a522da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="carrusel-fotos.js"></script>
+    <title>simulador universae</title>
+</head>
+
+<body>
+
+    <header>
+        <main>
+            <div class="header-container"></div>
+            <a href="https://universae.com/" class="enlace-universae">
+                <img src="HeaderWebUniversae.png" alt="universae">
+            </a>
+            </div>
+        </main>
+    </header>
+
+    <section class="juego">
+        <div class="contenido">
+            <div>
+                <iframe class="simulador" height="400" src="https://html-classic.itch.zone/html/8474473/index.html"
+                    frameborder="4"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+        <!--carrusel de fotos-->
+
+        <!-- Imágenes utilizadas para abrir la caja de luz -->
+
+        <div class="row"></div>
+            <pre class="texto">
+                <h1>        Mantenimiento de los equipos y herramientas
+                de extinción de incendios forestales.
+                </h1> 
+                En un campo de prácticas sumido en el desorden y la confusión
+                tienes que encontrar y colocar las partes de los EPIs
+                utilizados en la extinción de incendios forestales.
+            
+                Grado: Coordinación de emergencias y protección civil.
+        
+                Asignatura: Gestión de recursos de emergencias y protección civil
+        
+                Unidad: Planificación y supervisión del mantenimiento de equipos
+                medios técnicos e instalaciones.
+        
+                Duración aproximada: 10 minutos.
+        
+                Nivel de dificultad: Fácil.
+            </pre>
+            <div class="column">
+            <img src="InterfazGame/Miniaturas/EPIS/EPIS0.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="InterfazGame/Miniaturas/EPIS/EPIS1.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="InterfazGame/Miniaturas/EPIS/EPIS2.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="InterfazGame/Miniaturas/EPIS/EPIS3.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="InterfazGame/Miniaturas/EPIS/EPIS4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+    <section>
+            <!-- El Modal/Lightbox -->
+        <div id="myModal" class="modal">
+           
+            <div class="modal-content">
+            
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="InterfazGame/Miniaturas/EPIS/EPIS0.png" style="width:99%">
+                </div>
+                    
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="InterfazGame/Miniaturas/EPIS/EPIS1.png" style="width:99%">
+                </div>
+                    
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="InterfazGame/Miniaturas/EPIS/EPIS2.png" style="width:99%">
+                </div>
+                    
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="InterfazGame/Miniaturas/EPIS/EPIS3.png" style="width:99%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="InterfazGame/Miniaturas/EPIS/EPIS4.png" style="width:99%">
+                </div>
+                    
+                    <!-- Controles siguiente/anterior
+                        modificados por mi -->
+
+                    <a class="prev" onclick="plusSlides(-1)">
+                        <img src="InterfazGame/Flecha izquierda.png" alt="">
+                    </a>
+                    
+                    <a class="next" onclick="plusSlides(1)">
+                        <img src="InterfazGame/Flecha derecha.png" alt="">
+                    </a>
+                    
+                    <!-- Texto del pie de foto -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                    
+                    <!--- Controles de imagen en miniatura -->
+                     <!--
+                    <div class="column">
+                        <img class="demo" src="embarque/embarque0.png" onclick="currentSlide(1)" alt="">
+                    </div>
+                        
+                    <div class="column">
+                        <img class="demo" src="embarque/embarque1.png" onclick="currentSlide(2)" alt="">
+                    </div>
+                        
+                    <div class="column">
+                        <img class="demo" src="embarque/embarque2.png" onclick="currentSlide(3)" alt="">
+                    </div>
+                        
+                    <div class="column">
+                        <img class="demo" src="embarque/embarque3.png" onclick="currentSlide(4)" alt="">
+                    </div>
+    
+                    <div class="column">
+                        <img class="demo" src="embarque/embarque4.png" onclick="currentSlide(4)" alt="">
+                    </div>  -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="botones">
+                <a href="https://www.facebook.com/UNIVERSAE/" class="face">
+                    <i style="font-size:24px" class="fa">&#xf230;</i>
+                </a>
+                <a href="https://www.instagram.com/_universae/?hl=es" class="insta">
+                    <i style="font-size:24px" class="fa">&#xf16d;</i>
+                </a>
+                <a href="https://www.youtube.com/c/UNIVERSAE_FP" class="youtube">
+                    <i style="font-size:24px" class="fa">&#xf16a;</i>
+                </a>
+                
+                <a href="https://www.youtube.com/c/UNIVERSAE_FP" class="twitch">
+                    <i class="fa fa-twitch" aria-hidden="true" style="font-size: 24px;"></i>
+                </a>
+                <a href="https://www.linkedin.com/school/universae" class="linkedin">
+                    <i style="font-size:24px" class="fa">&#xf0e1;</i>
+                </a>
+                <a href="https://www.tiktok.com/@_universae" class="tiktok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://twitter.com/_Universae" class="twitter">
+                    <i style="font-size:24px" class="fa">&#xf099;</i>
+                </a>
+                <a href="https://universae.com" class="google">
+                    <i style="font-size:24px" class="fa">&#xf1a0;</i>
+                </a>   
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

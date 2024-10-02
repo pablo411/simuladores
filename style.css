@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: "raleway" sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #134c8f;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.contenido {
+
+    background-color: #b6e1f9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+} 
+    
+
+.fotos-1,
+.fotos-2 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.miniaturas img {
+    width: 300px;
+    margin: 5px;
+}
+
+.helicoptero:hover {
+    transform: scale(2); 
+}
+
+.hemorragia:hover {
+    transform: scale(2);
+}
+
+.extincion:hover {
+    transform: scale(2);
+}
+.epis:hover {
+    transform: scale(2);
+}
+.señalizacion:hover {
+    transform: scale(2);
+}
+
+.rescate:hover {
+    transform: scale(2);
+}
+
+.footer {
+    background-color: #134c8f;
+    padding: 18px;
+    box-shadow: 0px -5px 10px 1px rgb(0, 0, 0, 0.24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.botones {
+    
+    display: flex;
+    justify-content: center;
+}
+
+pre {
+    
+    font-family: "raleway";
+    font-weight: bold;
+}
+
+.face,
+.insta,
+.youtube,
+.twitch,
+.linkedin,
+.tiktok,
+.twitter,
+.google {
+    color: white;
+    background: #134c8f;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.face:hover,
+.insta:hover,
+.youtube:hover,
+.twitch:hover,
+.linkedin:hover,
+.tiktok:hover,
+.twitter:hover,
+.google:hover {
+    background-color: #6f7271;
+}
+/*
+/* css segunda pagina*/
+
+.simulador {
+    width: 820px;
+    height:650px;
+    position: relative;
+    left: 320px;
+}
+
+/*
+
+.fotos-embarque img {
+    width: 450px;
+    height: 250px;
+    display: flex 
+}  */
+    
+body {
+    background-color: #b6e1f9;
+    
+}
+/*
+.fotos-embarque {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}  */
+
+.texto {
+    float: left;
+    display: flexbox;
+}
+
+/*carrusel de fotos*/
+
+.row > .column {
+    padding: 0 8px;  
+  }
+
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Cree cuatro columnas iguales que floten una al lado de la otra
+  modificado por mi para alinear a la izquierda */
+  .column {
+    /*
+    float: left;
+    width: 25%;
+    */
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  /*agregado por mi para poner miniatura las fotos*/ 
+  .column img {
+    width: 450px;
+    height: 250px;
+    display: flex 
+  }
+
+  /* El Modal (antecedentes) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Contenido modal */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 60%;
+    max-width: 1200px;
+  }
+  
+  /* El botón Cerrar */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Ocultar las diapositivas de forma predeterminada */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Botones Siguiente y Anterior 
+  modiificados por mi*/
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 15%;
+    width: auto;
+    padding: 2px;
+    margin-top: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Coloque el "botón siguiente" a la derecha */
+  .next {
+    right: -5px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Al pasar el cursor por encima, agregue un color de fondo negro con un poco de transparencia */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Texto numérico (1/3, etc.) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Texto del pie de foto */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  
+            
+
+
+
+
+
+
+
