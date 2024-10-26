@@ -1,4 +1,5 @@
 // Abra el modal
+
 function openModal() {
     document.getElementById("myModal").style.display = "block";
   }
@@ -45,3 +46,4 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+    
